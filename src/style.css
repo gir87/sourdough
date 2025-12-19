@@ -1,0 +1,43 @@
+/* 1. External imports MUST go at the top */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+/* 2. Theme definitions */
+@theme {
+  --color-bakery-50: #fdfbf7;
+  --color-bakery-100: #f4ece1;
+  --color-bakery-200: #e6dcc8;
+  --color-bakery-300: #d4c3a3;
+  --color-bakery-400: #b09873;
+  --color-bakery-500: #967248;
+  --color-bakery-600: #755139;
+  --color-bakery-700: #5d4037;
+  --color-bakery-800: #46322e;
+  --color-bakery-900: #2c1810;
+
+  --color-accent-light: #f2d2bd;
+  --color-accent: #d97c2e;
+  --color-accent-dark: #a0522d;
+
+  --font-display: "Fraunces", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Fraunces", serif;
+}
+
+/* 3. Custom Global Styles (Scrollbars) */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f4ece1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d4c3a3; 
+    border-radius: 5px;
+    border: 2px solid #f4ece1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b09873; 
+  }
+}
